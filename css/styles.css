@@ -34,72 +34,79 @@ body {
     display: flex;
     justify-content:start;
     align-items: center;
-    width: 1125px;
-    height: 368px;
+    max-inline-size: 1125px;
+    max-block-size: 368px;
     margin: auto;
     margin-top: 94.08px; 
+    margin-bottom: 71px;
 }
 .bienvenida{
     background: var(--tech);
-    width: 970px;
-    height: 214px;
     border-radius: 82px;
     color: white;
     position: relative;
-    padding: 0px 100px 0px 50px;
+    padding: 59.5px 100px 59.5px 50px;
     z-index: 1;
     left: 70px; 
+    
 }
 #logo {
     position: relative;
     z-index: 2; 
-    right: 70px;   
+    right: 70px; 
+    max-inline-size: 100%;
+    
 }
 h3{
     font-size: 24px;
     font-weight: 900;
-    width: 763px;
-    height: 29px;
     line-height: 28.8px;
-    padding-top: 35.5px;
+    margin: 0px 0px 28px 0px;
+    
+    
 }  
 .bienvenida p{
-   font-weight: 400;      
+   font-weight: 400;   
+   margin: auto;
+    
 }
 .tarjetasmodulo{
     display: flex;
-    justify-content: space-around;  
-    height: 750px;
-    margin:auto; 
-    margin: 32px 55px 163px 55px;
+    justify-content: center;
+    margin-block-end: 100px;
+    
+
 }
 .tarjeta-buscar{
     background:var(--violet);
-    width: 432px;
-    height: 750px;
+    max-inline-size: 300px;
     border-radius: 30px;
     color: white;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+    margin-inline-end: 8px;
+     
+        
 }
 .tarjeta-guardar{
-    margin: 0px 16px;
+    margin-inline: 8px;
     background:var(--violet);
-    width: 432px;
-    height: 750px;
+    max-inline-size: 300px;
     border-radius: 30px;
     color: white;  
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+   
 }
 .tarjeta-analizar{
     background:var(--violet);
-    width: 432px;
-    height: 750px;
+    max-inline-size: 300px;
     border-radius: 30px;
     color: white;  
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25); 
+    margin-inline-start: 8px;
+    
 }
 h1{
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 900;
     line-height: 48px;
     margin-top: 14px;
@@ -109,10 +116,12 @@ h1{
     font-size: 24px;
     font-size: 700;
     line-height: 29.05px;
-    margin: 14px 50px;
+    margin: 14px 20px;
 }
 .image-tarjet{
-    margin-top: 93.5px ;
+    margin-top: 20px ;
+    inline-size: 200px;
+    block-size: 200px;
 }
 
 
