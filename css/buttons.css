@@ -1,21 +1,67 @@
 .button {
-    inline-size: 306px;
-    block-size: 69px;
+    max-width: 307px;
+    width: 100%;
+    block-size: 39px;
     border: none;
     border-radius: 28px;
     background:none;
     cursor: pointer;
-    margin-top: 10.5px;
     font-family: 'Urbanist', sans-serif;
     color: hsla(253, 100%, 10%, 0.8);
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inline-size: 268px; 
+  
 }
+
 .botonesmodulo {
     background: var(--caribe70) ;
-    block-size: 90px;
+    block-size: 49px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+           
+}
+.buttonssa{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 297px;
+    width: 100%;
+    
+}
+
+#buttonlibrary{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 297px;
+   width: 100%;
+   block-size: 39px;
+   border-inline: 3px solid white;
+    
+}
+#search  {
+    margin-inline-start: 5px;    
+    margin-inline-end: 10px;
+    inline-size: 149px; 
+   
+    
+}
+#analysis { 
+    margin-inline-start: 10px;
+    margin-inline-end: 5px;
+    
+    
+}
+#save{
+    margin-inline: 10px; 
+    inline-size: 173px;
+      
 }
 
 .button-go{
@@ -30,6 +76,8 @@
     color: white;
     cursor: pointer;
     font-weight: 700;
+    margin-block-end: 28px;
+  
 }
 .button-go:hover{
     box-shadow: 6px 6px 6px -1px rgba(11, 0, 51, 0.4);
@@ -38,16 +86,11 @@
     background-position: center;
     content-visibility:hidden;
 }
-.button:hover{
-    color:hsla(253, 100%, 10%, 1);
-    background: hsla(0, 0%, 100%, 0.8);
-    box-shadow: 5px 8px 24px gray;
-    font-weight: 800;
-}
+
 .activo {
     color:hsla(253, 100%, 10%, 1);
     background: hsla(0, 0%, 100%, 0.8);
-    box-shadow: 5px 8px 24px gray;
+    box-shadow: 4px 4px 3px 0px hsla(263, 100%, 21%, 0.29);
     font-weight: 800;
 }
 

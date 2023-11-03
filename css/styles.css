@@ -6,23 +6,12 @@
     --orange: #FF7000;
     --caribe70: hsla(183, 75%, 44%, 0.7);
     --white80: hsla(0, 0%, 100%, 0.8);
+    --caribe: hsla(183, 75%, 44%, 1);
+    --caribe30:  hsla(183, 75%, 44%, 0.3);
+
+
 }
 
-header {
-    background: var(--violet);
-    height: 100.92px;
-    display: flex;
-    justify-content: space-between; 
-    overflow: hidden;
-    align-items: center;
-    padding: 0 54.5px;
-}
-h2 {
-    font-size: 28px;
-    font-weight:900;
-    color: white;
-    text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
-}   
 
 body {
    font-family: 'Urbanist', sans-serif;
@@ -34,86 +23,173 @@ body {
     display: flex;
     justify-content:start;
     align-items: center;
-    width: 1125px;
-    height: 368px;
+    max-inline-size: 1107px;
+    max-block-size: 368px;
     margin: auto;
     margin-top: 94.08px; 
+    margin-bottom: 71px;
 }
 .bienvenida{
     background: var(--tech);
-    width: 970px;
-    height: 214px;
     border-radius: 82px;
+    block-size: 95px;
+    inline-size: 820px;
     color: white;
     position: relative;
-    padding: 0px 100px 0px 50px;
+    padding: 59.5px 100px 59.5px 50px;
     z-index: 1;
     left: 70px; 
+     
+    
 }
 #logo {
     position: relative;
     z-index: 2; 
-    right: 70px;   
+    right: 70px; 
+    max-inline-size: 100%;
+    
 }
 h3{
     font-size: 24px;
     font-weight: 900;
-    width: 763px;
-    height: 29px;
     line-height: 28.8px;
-    padding-top: 35.5px;
+    margin: 0px 0px 28px 0px;
+    
+    
 }  
 .bienvenida p{
-   font-weight: 400;      
+   font-weight: 400;   
+   margin: auto;
+    
 }
 .tarjetasmodulo{
     display: flex;
-    justify-content: space-around;  
-    height: 750px;
-    margin:auto; 
-    margin: 32px 55px 163px 55px;
+    justify-content: center;
+    margin-block-end: 85px;
+    
+
 }
 .tarjeta-buscar{
     background:var(--violet);
-    width: 432px;
-    height: 750px;
+    max-inline-size: 300px;
     border-radius: 30px;
     color: white;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+    margin-inline-end: 8px;
+     
+        
 }
 .tarjeta-guardar{
-    margin: 0px 16px;
+    margin-inline: 8px;
     background:var(--violet);
-    width: 432px;
-    height: 750px;
+    max-inline-size: 300px;
     border-radius: 30px;
     color: white;  
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+   
 }
 .tarjeta-analizar{
     background:var(--violet);
-    width: 432px;
-    height: 750px;
+    max-inline-size: 300px;
     border-radius: 30px;
     color: white;  
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25); 
+    margin-inline-start: 8px;
+    
 }
 h1{
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 900;
     line-height: 48px;
     margin-top: 14px;
     margin-bottom: 0px;
 }
 .tarjetasmodulo p{
-    font-size: 24px;
-    font-size: 700;
-    line-height: 29.05px;
-    margin: 14px 50px;
+    font-size: 16px;
+    font-size: 400;
+    line-height: 19.36px;
+    margin: 14px 20px;
 }
 .image-tarjet{
-    margin-top: 93.5px ;
+    margin-top: 20px ;
+    inline-size: 200px;
+    block-size: 200px;
 }
+.bannerseccionbiblioteca{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    block-size: 368px;
+    margin: auto;
+    margin-top: 111.82px; 
+    margin-bottom: 192px;
+    overflow: auto;
+      
+}
+#saves{
+    inline-size: 130px;
+    block-size: 131px;
+    margin-inline-end: 28px;
+    float: inline-start;
+}
+
+.bannerseccionbiblioteca .bienvenida{
+    inline-size: 889px;
+      
+}
+.carpetasbiblioteca{
+    display: flex;
+    justify-content: center;
+    inline-size: 1009px;
+    margin: auto;
+    margin-block-end: 100px;
+
+}
+.crearNuevaCarpeta{ 
+    block-size: 301px;
+    inline-size: 315px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content:center;
+    background: var(--orange);
+    margin: 0px 16px;
+    background-image: url(../images/new-folder1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-block-start: 48px;
+}
+.crearNuevaCarpeta:hover{
+    background-image: url(../images/new-folder2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.carpeta{
+    block-size: 301px;
+    inline-size: 315px;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    font-family: 'Urbanist', sans-serif;
+    color: var(--tech);
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    background: var(--caribe70);
+    margin: 0px 16px;
+}
+
+
+
 
 
 
