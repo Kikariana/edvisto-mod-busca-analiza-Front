@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('./buttons.css');
 
 :root{
@@ -193,3 +194,133 @@ h1{
 
 
 
+=======
+@import url('./buttons.css');
+
+:root{
+    --violet: #6100FF;
+    --tech: #0B0033;
+    --orange: #FF7000;
+    --caribe70: hsla(183, 75%, 44%, 0.7);
+    --white80: hsla(0, 0%, 100%, 0.8);
+}
+
+header {
+    background: var(--violet);
+    height: 100.92px;
+    display: flex;
+    justify-content: space-between; 
+    overflow: hidden;
+    align-items: center;
+    padding: 0 54.5px;
+}
+h2 {
+    font-size: 28px;
+    font-weight:900;
+    color: white;
+    text-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.25);
+}   
+
+body {
+   font-family: 'Urbanist', sans-serif;
+   text-align: center;   
+   margin:0;      
+}
+
+.bannermodulo{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    max-inline-size: 1125px;
+    max-block-size: 368px;
+    margin: auto;
+    margin-top: 94.08px; 
+    margin-bottom: 71px;
+}
+.bienvenida{
+    background: var(--tech);
+    border-radius: 82px;
+    color: white;
+    position: relative;
+    padding: 59.5px 100px 59.5px 50px;
+    z-index: 1;
+    left: 70px; 
+    
+}
+#logo {
+    position: relative;
+    z-index: 2; 
+    right: 70px; 
+    max-inline-size: 100%;
+    
+}
+h3{
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28.8px;
+    margin: 0px 0px 28px 0px;
+    
+    
+}  
+.bienvenida p{
+   font-weight: 400;   
+   margin: auto;
+    
+}
+.tarjetasmodulo{
+    display: flex;
+    justify-content: center;
+    margin-block-end: 100px;
+    
+
+}
+.tarjeta-buscar{
+    background:var(--violet);
+    max-inline-size: 300px;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+    margin-inline-end: 8px;
+     
+        
+}
+.tarjeta-guardar{
+    margin-inline: 8px;
+    background:var(--violet);
+    max-inline-size: 300px;
+    border-radius: 30px;
+    color: white;  
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+   
+}
+.tarjeta-analizar{
+    background:var(--violet);
+    max-inline-size: 300px;
+    border-radius: 30px;
+    color: white;  
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25); 
+    margin-inline-start: 8px;
+    
+}
+h1{
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 48px;
+    margin-top: 14px;
+    margin-bottom: 0px;
+}
+.tarjetasmodulo p{
+    font-size: 24px;
+    font-size: 700;
+    line-height: 29.05px;
+    margin: 14px 20px;
+}
+.image-tarjet{
+    margin-top: 20px ;
+    inline-size: 200px;
+    block-size: 200px;
+}
+
+
+
+>>>>>>> f4830b6d495de3423a787f43c4379026a9d88a8c

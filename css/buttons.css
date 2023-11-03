@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .button {
     max-width: 307px;
     width: 100%;
@@ -94,3 +95,100 @@
     font-weight: 800;
 }
 
+=======
+.button {
+    max-width: 307px;
+    width: 100%;
+    block-size: 69px;
+    border: none;
+    border-radius: 28px;
+    background:none;
+    cursor: pointer;
+    font-family: 'Urbanist', sans-serif;
+    color: hsla(253, 100%, 10%, 0.8);
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
+}
+.botonesmodulo {
+    background: var(--caribe70) ;
+    block-size: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+           
+}
+
+.buttonssa{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 457px;
+    width: 100%;
+    
+}
+
+#buttonlibrary{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 457px;
+   width: 100%;
+   block-size: 80px;
+   border-inline: 3px solid white;
+    
+}
+#search  {
+    margin-inline-start: 5px;    
+    margin-inline-end: 10px;
+    
+}
+#analysis { 
+    margin-inline-start: 10px;
+    margin-inline-end: 5px;
+    
+}
+#save{
+    margin-inline: 10px;   
+}
+
+.button-go{
+    width: 140px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 15px;
+    background:var(--orange);
+    border: none;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    margin-block-end: 20px;
+}
+.button-go:hover{
+    box-shadow: 6px 6px 6px -1px rgba(11, 0, 51, 0.4);
+    background-image: url(../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    content-visibility:hidden;
+}
+/*.button:hover{
+    color:hsla(253, 100%, 10%, 1);
+    background: hsla(0, 0%, 100%, 0.8);
+    box-shadow: 5px 8px 24px gray;
+    font-weight: 800;
+}*/
+.activo {
+    color:hsla(253, 100%, 10%, 1);
+    background: hsla(0, 0%, 100%, 0.8);
+    box-shadow: 5px 8px 24px gray;
+    font-weight: 800;
+}
+
+>>>>>>> f4830b6d495de3423a787f43c4379026a9d88a8c
