@@ -61,6 +61,11 @@
 #save{
     margin-inline: 10px; 
     inline-size: 173px;
+    color:hsla(253, 100%, 10%, 1);
+    background: hsla(0, 0%, 100%, 0.8);
+    box-shadow: 4px 4px 3px 0px hsla(263, 100%, 21%, 0.29);
+    font-weight: 800;
+    
       
 }
 
@@ -76,21 +81,19 @@
     color: white;
     cursor: pointer;
     font-weight: 700;
-    margin-block-end: 28px;
-  
+    margin-block-end: 50.5px;
+    background-image: url(../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: top 12px right 12px;
+    
 }
 .button-go:hover{
     box-shadow: 6px 6px 6px -1px rgba(11, 0, 51, 0.4);
-    background-image: url(../images/arrow-right.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    content-visibility:hidden;
+    
 }
 
-.activo {
-    color:hsla(253, 100%, 10%, 1);
-    background: hsla(0, 0%, 100%, 0.8);
-    box-shadow: 4px 4px 3px 0px hsla(263, 100%, 21%, 0.29);
-    font-weight: 800;
-}
+
+
+
+
 
