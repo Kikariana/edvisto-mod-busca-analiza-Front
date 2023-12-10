@@ -22,6 +22,7 @@ body {
 
 main{
     display: flex;
+    flex-direction: column;
     background-image: url(../images/frame.png);
 }
 
@@ -152,8 +153,8 @@ h1{
 }
 #seccionbiblioteca{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     
 }
 .bannerseccionbiblioteca{
@@ -230,32 +231,52 @@ h1{
     justify-content:center;
     background: var(--caribe70);
     margin: 0px 16px;
-    background-image: url(../images/example-folder1.svg);
-    background-repeat: no-repeat;
-    background-position: top 51px right 40px;
-    background-size: 227px 229px;
 }
 
 #FolderName{
     margin-top: 13px;
-    margin-bottom: 9px;
+    margin-block-end: 0px;
+    
+    
     
 }
 .carpeta:hover #FolderName{
     margin-top: 25px;
+    margin-bottom: 22px;
+    text-align: center;
 }
 
-.carpeta:hover {
+#image1{
+    block-size: 229px;
+    inline-size: 227px;
+    
+}
+
+.carpeta:hover  {
     block-size: 463px;
     inline-size: 315px;
-    background-size: 271px 273px;
-    background-position: top 76px right 19px;
+      
+    
    
     
 }
 #botoncarpeta{
     background-color: var(--violet);
-    margin-block: 12px;
+    
+    width: 140px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+    margin-block-end: 50.5px;
+    background-image: url(../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: top 12px right 12px;
     
 }
 .HoverCarpeta {
@@ -263,12 +284,12 @@ h1{
     color: white;
     font-size: 16px;
     font-weight: 700;
-    transform:translate(0, 140px);
+    transform:translate(0, 10px);
 
 }
 .HoverCarpeta p{
     margin-block-start: 23px;
-    margin-block-end: 0%;
+    margin-block-end: 12px;
 }
 .carpeta:hover .HoverCarpeta{
     display: block;
@@ -374,7 +395,27 @@ Select{
     
 }
 #Upload-Image{
-    cursor: pointer; 
+    cursor: pointer;
+    inline-size: 163px;
+    block-size: 163px;
+    background: hsla(0, 0%, 85%, 1);
+    border-radius: 16px;
+       
+}
+
+#Upload-Image1{
+    cursor: pointer;
+    inline-size: 316px;
+    block-size: 316px;
+    background: hsla(0, 0%, 85%, 1);
+    border-radius: 16px;
+}
+
+#custom-button{
+    background: hsla(0, 0%, 85%, 1);
+    border-radius: 16px; 
+    border: none;  
+    padding: 0px;
 }
 
 .ButtonNewFolder{
@@ -530,7 +571,7 @@ Select{
 /*Busqueda*/
 #result_section {
     width: 100%;
-    display: flex;
+    
     margin-top: 85px;
     justify-content: center;
     align-items: center;
@@ -558,7 +599,7 @@ Select{
 #search_videos {
     display: flex;
     margin-block: 20px;
-    margin-inline-start: 448.5px;
+    margin-inline-start: 78%;
     margin-inline-end: 74px;
     
 }
@@ -567,7 +608,7 @@ Select{
     display: flex;
     margin-block: 20px;
     margin-inline-start: 74px;
-    margin-inline-end: 449px;
+    margin-inline-end: 78%;
    
 }
 

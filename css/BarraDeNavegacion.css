@@ -72,3 +72,51 @@ body {
     box-shadow: 4px 4px 3px 0px hsla(263, 100%, 21%, 0.29);
     font-weight: 800;
 }
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 245px;
+    width: 100%;
+}
+
+.icono-perfil {
+    width: 61px;
+    height: 61.26px;
+}
+
+.project {
+    height: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 985px;
+    background-color: var(--caribe);
+}
+
+.project p {
+    color: var(--tech);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.project a{
+    text-decoration: none;
+}
+
+
+.back-btn {
+    border: none;
+    background-color: var(--caribe);
+    display: flex;
+    gap: 0;
+    align-items: center;
+    color: var(--tech);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    height: 30px;
+    cursor: pointer;
+}

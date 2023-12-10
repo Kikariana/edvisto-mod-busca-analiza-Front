@@ -46,13 +46,11 @@
                         </div>
                         <p ><img class="Icon" id="IconObject" src="./images/object.svg" alt="Icono del objetivo" width="18px" height="18px">Objetivo</p>
                         <input class="InputNewFolder1" id="ObjectPart" type="text" required placeholder="Example text here" readonly>
-                    </div>         
-                    <div class="UploadImage1" >
-                        <label for="UploadImageInput" >
-                            <img id="Upload-Image" src="./images/upload-image.svg" alt="Subir imagen" width="145.29px" height="145.29px">
-                        </label>
-                        <input id="UploadImageInput" type="file" accept="image/png, image/jpeg" style="display: none;" disabled>
-                    </div>
+                    </div> 
+                    <div class="UploadImage1" id="UploadImage1">
+                        <input type="file" id="UploadImageInput" accept="image/" style="display: none;" disabled>
+                        <button id="custom-button"><img src="./images/upload-image.svg" alt="Vista previa" id="Upload-Image1"></button>
+                    </div>        
                 </div>
                             
             </div>
@@ -83,7 +81,7 @@
         </div>
 
         <div id="BodySaveFolder">
-            <h3  id="Save-videos">¡Ouch! Aun no tienes Videos Guardados</h3>
+            <h3  id="Save-videos" data-original-message="Mensaje original aquí">¡Ouch! Aun no tienes Videos Guardados</h3>
             <button class="button-investigate">
                 <a class="a1" href="/busqueda.html">¡Ir a Investigar!</a>
             </button>

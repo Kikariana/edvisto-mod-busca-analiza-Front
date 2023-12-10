@@ -15,13 +15,12 @@ document.getElementById('EditButton').addEventListener('click', function() {
     
         editButton.style.backgroundImage = 'url("../images/edit.svg")'; 
         editButton.value = 'Editar';
-        backButton.style.color = 'var(--orange)';
-        backButton.style.borderColor = 'var(--orange)';
-        backButton.style.backgroundImage = 'url("../images/arrow-back.svg")';
-        backButton.style.cursor = 'pointer'
-        backButton.style.boxShadow ='6px 6px 6px -1px rgba(11, 0, 51, 0.4)'
+        backButton.style.display ='block';
+        backButton.style.textUnderlineOffset='';
 
         editButton.dataset.estado = 'no editando'; 
+
+        
 
     } else{
         for (var i = 0; i < campos.length; i++) {
@@ -32,59 +31,95 @@ document.getElementById('EditButton').addEventListener('click', function() {
         
         editButton.style.backgroundImage = 'url("../images/check.svg")'; 
         editButton.value = 'Guardar';
-        backButton.style.color = 'hsla(0, 0%, 85%, 1)';
-        backButton.style.borderColor = 'hsla(0, 0%, 85%, 1)';
-        backButton.style.backgroundImage = 'url("../images/arrow-back2.svg")';
-        backButton.style.cursor = 'none'
-        backButton.style.boxShadow ='none'
+        backButton.style.display ='none';
     
         editButton.dataset.estado = 'editando';
-
-        backButton.addEventListener('click', function(event) {
-                event.preventDefault();
-
+ 
+    }  
+    
+   
+    
     });
-    
-}  
-    
+
+    const buttons_tab = document.querySelectorAll(".tabButton");
+    const tabBox1 = document.querySelector(".tab_api1");
+    const tabBox2 = document.querySelector(".tab_api2");
+    const mensajeExistente = document.querySelector("#Save-videos");
+    const mensajeOriginal = mensajeExistente.dataset.originalMessage;
+
+    // if (tabBox1) {
+    //   tabBox1.innerHTML = "¡Ouch! Aun no tienes Videos Guardados";
+    // }
+
+    // if (tabBox2) {
+    //   tabBox2.innerHTML = "¡Ouch! Aun no tienes Artículos Guardados";
+    // }
+
+   
+      
+        buttons_tab.forEach((b) => {
+          b.addEventListener("click", () => {
+            buttons_tab.forEach((btn) => {
+              btn.classList.remove("active");
+              const activeImg = btn.querySelector(".active-image");
+              const defaultImg = btn.querySelector(".default-img");
+              activeImg.style.display = "none";
+              defaultImg.style.display = "block";
+              mensajeExistente.textContent = "¡Ouch! Aún no tienes Artículos Guardados";
+              
+            });
+            b.classList.add("active");
+            const activeImg = b.querySelector(".active-image");
+            const defaultImg = b.querySelector(".default-img");
+            activeImg.style.display = "block";
+            defaultImg.style.display = "none";
+          
         
-    
-});
-
-const buttons_tab = document.querySelectorAll(".tabButton");
-const messagebuttons = document.getElementById('Save-videos');
-
-    buttons_tab.forEach((b) => {
-      b.addEventListener("click", () => {
-        buttons_tab.forEach((btn) => {
-          btn.classList.remove("active");
-          const activeImg = btn.querySelector(".active-image");
-          const defaultImg = btn.querySelector(".default-img");
-          activeImg.style.display = "none";
-          defaultImg.style.display = "block";
-          
-          
-        });
-        b.classList.add("active");
-        const activeImg = b.querySelector(".active-image");
-        const defaultImg = b.querySelector(".default-img");
-        activeImg.style.display = "block";
-        defaultImg.style.display = "none";
-        messagebuttons.textContent = "¡Ouch! Aun no tienes Artículos Guardados";
-     
-      });
-      const targets = document.querySelectorAll("[data-target]");
-      const content = document.querySelectorAll("[data-content]");
-      targets.forEach((target) => {
-        target.addEventListener("click", function () {
-          content.forEach((c) => {
-            c.classList.remove("activo");
-            
           });
-          const t = document.querySelector(target.dataset.target);
-          t.classList.add("activo");
-        
+          const targets = document.querySelectorAll("[data-target]");
+          const content = document.querySelectorAll("[data-content]");
+          targets.forEach((target) => {
+            target.addEventListener("click", function () {
+              content.forEach((c) => {
+                c.classList.remove("activo");
+                
+              });
+              const t = document.querySelector(target.dataset.target);
+              t.classList.add("activo");
+
+              
+            
+            });
         });
     });
-});
+
+   
+    const fileInput = document.getElementById('UploadImageInput');
+    const customButton = document.getElementById('custom-button');
+    const previewImage = document.getElementById('Upload-Image1');
+    const UploadImageInput = document.getElementById('UploadImage');
+
+        customButton.addEventListener('click', () => {
+          fileInput.click();
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            
+        
+        fileInput.addEventListener('change', function () {
+                const file = fileInput.files[0];
+        
+                if (file) {
+                    const reader = new FileReader();
+        
+                    reader.addEventListener('load', function () {
+                        previewImage.src = reader.result;
+                        previewImage.style.display = 'block';
+                        
+                    });
+        
+                    reader.readAsDataURL(file);
+                }
+            });
+        }); 
 
