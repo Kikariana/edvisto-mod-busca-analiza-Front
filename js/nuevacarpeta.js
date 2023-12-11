@@ -1,10 +1,27 @@
+document.addEventListener('DOMContentLoaded', function() {
+  var urlParams = new URLSearchParams(window.location.search);
+  var folderName = urlParams.get('folderName');
+
+  if (folderName) {
+    serviceGetFolder(folderName, null, function(responseData){
+      console.log('Respuesta de la API:', responseData.folders);
+      if(responseData.folders.length == 0){
+          alert('no se encontro el folder')
+      }
+      const folder = responseData.folders[0];
+      document.getElementById("NombreProyecto").value= folder.folderName
+      document.getElementById("ObjectPart").value= folder.objective
+    });
+    return
+  }
+  alert("fallo al cargar el folder")
+});
+
 document.getElementById('EditButton').addEventListener('click', function() {
     const campos = document.querySelectorAll('.InputNewFolder1');
     const uploadInput = document.getElementById('UploadImageInput');
     const editButton = document.getElementById('EditButton');
     const backButton = document.getElementById('BackButton');
-
-   
 
     if(editButton.dataset.estado ==='editando'){
         for (var i = 0; i < campos.length; i++) {

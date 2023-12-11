@@ -62,11 +62,11 @@
                     <img id="logo" src="images/perrito_profesor.svg" alt="Avatar EdVisto" width="242px" height="367px">
             </div>
             <div class="carpetasbiblioteca" id="carpetasBiblioteca">
-                
+                                   
                 <button id="CrearNewFolder" class="crearNuevaCarpeta">Crear nueva carpeta</button>
             </div>  
             <dialog  id="Form1" >
-                <form method="dialog" action="#" class="Formulario" novalidate>
+                <div class="Formulario" novalidate>
                             <h3 id="NewFolder"><img id="IconNewFolder" src="./images/icon-new-folder.svg" alt="Icono Nueva imagen" width="22px" height="22px">Nueva Carpeta</h3>
                             <div id="TextForm">
                                 <div id="FirstPart">
@@ -81,16 +81,16 @@
                                         </div>
                                     </div>
                                     <div class="UploadImage" id="UploadImage">
-                                        <input type="file" id="UploadImageInput" accept="image/" style="display: none;">
+                                        <input type="file" id="UploadImageInput" accept="image/" style="display: none;" onchange="loadFile()">
                                         <button id="custom-button"><img src="./images/upload-image.svg" alt="Vista previa" id="Upload-Image"></button>
                                     </div>
                                 </div>
                                 <p><img class="Icon" id="IconObject" src="./images/object.svg" alt="Icono del objetivo" width="18px" height="18px">Objetivo</p>
                                 <input class="InputNewFolder" id="Objetivo" type="text" required placeholder="Example text here">
                             </div>
-                            <input class="ButtonNewFolder" id="AcceptButton" type="submit" value="Aceptar" >
-                            <input class="ButtonNewFolder" id="CancelButton" type="button" value="Cancelar">
-                </form>
+                            <input class="ButtonNewFolder" id="AcceptButton" type="submit" value="Aceptar" onclick="submitFolder()" >
+                            <input class="ButtonNewFolder" id="CancelButton" type="button" value="Cancelar" onclick="cleanForm()">
+                </div>
             </dialog>
             <dialog id="ConfirmacionCrearCarpeta" >
                 <div class="HeaderCloseButton">
@@ -102,13 +102,15 @@
                             <img id="GreenCheck" src="./images/green-check.svg" alt="Icono de aprobación de creacion de carpeta" width="63px" height="63px">
                         </div>
                     <button class="button-go" id="botonConfirmacionCarpeta"  aria-label="Botón de ir a carpeta después de haberse creado">
-                        <a class="a1" href="/nuevacarpeta.html">Ir a Carpeta</a>
+                        <a id="gotoNewFolder" class="a1" href="/nuevacarpeta.html">Ir a Carpeta</a>
                     </button>
                 </div>
             </dialog>
             
             </section>
     </main>
+   
+    <script src="./js/service.js"></script>
     <script src="./js/js.js"></script>
 </body>
 </html>
